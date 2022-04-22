@@ -1,0 +1,6 @@
+mixin color-item(itemName, itemHex, itemClass)
+    li.color-palette__item.color-item
+        .color-item__example(class='color-item__example--' + itemClass)
+        .color-item__text
+            .color-item__name= itemName
+            .color-item__hex= itemHex

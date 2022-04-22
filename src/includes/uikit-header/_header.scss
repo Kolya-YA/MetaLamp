@@ -1,0 +1,14 @@
+.header {
+    min-width: 100%;
+    padding: 30px;
+    // background-color: blueviolet;
+
+    .header__logo {
+        width: 48px;
+        height: 48px;
+
+        svg {
+            fill: var(--color-dark-25);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+- var colors = [
+-    ['Dark Shade 100%', '#1f2041', 'dark-100'],
+-    ['Dark Shade 75%', '#1f2041', 'dark-75'],
+-    ['Dark Shade 50%', '#1f2041', 'dark-50'],
+-    ['Dark Shade 25%', '#1f2041', 'dark-25'],
+-    ['Dark Shade 5%', '#1f2041', 'dark-5'],
+-    ['Purple', '#1f2041', 'primary'],
+-    ['Green', '#1f2041', 'secondary'],
+-]
+
+ul.colors-palette
+    include color-palette__item
+
+    each color in colors
+        +color-item(color[0],color[1], color[2])

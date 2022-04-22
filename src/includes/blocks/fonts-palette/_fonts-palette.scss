@@ -1,0 +1,30 @@
+.fonts-palette {
+    width: 436px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .font-palette__item {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        .font-palette__name {
+            flex-shrink: 0;
+            width: 37px;
+            >* {
+                text-align: right;
+                font-weight: normal;
+                color: var(--color-dark-25);
+            }
+        }
+
+        .font-palette__text {
+            margin-left: 30px;
+        }
+    }
+}
