@@ -8,6 +8,13 @@ html(lang="ru")
         link(rel="stylesheet", href="main.scss")
     body
         include includes/uikit-header/header.pug
-    .colors-type-wrapper
+    .blocks-wrapper
         include includes/blocks/colors-palette/colors-palette
         include includes/blocks/fonts-palette/fonts-palette
+    .blocks-wrapper
+        include includes/blocks/text-input/text-input
+        .form-el-coloumn
+            +text-input('Text field', 'id-email', 'email', 'Email', 'default')
+            +text-input('Text field', 'id-text', 'text', 'hover / focus', 'This is pretty awesome', 'This is pretty awesome', true)
+        .form-el-coloumn
+        .form-el-coloumn

@@ -1,0 +1,15 @@
+mixin text-input(label, fieldId, fieldType, headerComment, placeholder, fieldValue, isFocused)
+    //- .text-input(class=isFocused ? "focused" : "")
+    .text-input(class=isFocused && "text-input--focused")
+        label.text-input__label(
+                for=fieldId
+            )
+            .text-input__name= label
+            .text-input__comment= headerComment
+        input.text-input__input(
+            type=fieldType
+            id=fieldId
+            name=fieldId
+            placeholder=placeholder
+            value = fieldValue
+        )
