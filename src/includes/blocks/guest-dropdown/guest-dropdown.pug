@@ -1,0 +1,14 @@
+mixin guest-dropdown(rooms, bads, buds, isOpen)
+    details.guest-dropdown(open=isOpen)
+        summary.guest-dropdown__summary
+            span 2 спальни, 2 кровати...
+        .guest-dropdown__inputs
+            .guest-dropdown__item
+                .guest-dropdown__param Спальни
+                .guest-dropdown__btns + 5 -
+            .guest-dropdown__item
+                .guest-dropdown__param Кровати
+                .guest-dropdown__btns + 5 -
+            .guest-dropdown__item
+                .guest-dropdown__param Ванные комнаты
+                .guest-dropdown__btns + 5 -

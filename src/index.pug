@@ -13,8 +13,11 @@ html(lang="ru")
         include includes/blocks/fonts-palette/fonts-palette
     .blocks-wrapper
         include includes/blocks/text-input/text-input
+        include includes/blocks/guest-dropdown/guest-dropdown
         .form-el-coloumn
             +text-input('Text field', 'id-email', 'email', 'Email', 'default')
             +text-input('Text field', 'id-text', 'text', 'hover / focus', 'This is pretty awesome', 'This is pretty awesome', true)
+            +guest-dropdown(3, 2, 1)
+            +guest-dropdown(3, 2, 1, true)
         .form-el-coloumn
         .form-el-coloumn

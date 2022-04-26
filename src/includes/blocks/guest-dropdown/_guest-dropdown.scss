@@ -1,0 +1,42 @@
+.guest-dropdown {
+    width: 320px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-dark-25);
+    border-radius: 4px;
+    color: var(--color-dark-75);
+    font-size: 14px;
+    line-height: 18px;
+    
+    &__summary {
+        display: flex;
+        list-style: none;        
+        
+        span {
+            padding: 13px 15px;
+        }
+
+        &::after {
+            content: 'A';
+            display: flex;
+            width: 44px;
+            height: 44px;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: coral;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &[open] {
+        .guest-dropdown__summary {
+            border-bottom: 1px solid var(--color-dark-25);
+        }
+    
+    }
+}
