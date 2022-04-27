@@ -1,0 +1,17 @@
+.field-header {
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    
+    &__name {
+        font-weight: bold;
+    }
+    
+    &__comment {
+        color: var(--color-dark-50);
+    }
+}

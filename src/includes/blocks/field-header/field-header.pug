@@ -1,0 +1,9 @@
+mixin field-header(header, comment, fieldId)
+    if fieldId
+        label.field-header(for= fieldId)
+            .field-header__name= header
+            .field-header__comment= comment
+    else
+        .field-header
+            .field-header__name= header
+            .field-header__comment= comment

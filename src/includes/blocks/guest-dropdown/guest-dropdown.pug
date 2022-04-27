@@ -1,14 +1,14 @@
-mixin guest-dropdown(rooms, bads, buds, isOpen)
-    details.guest-dropdown(open=isOpen)
-        summary.guest-dropdown__summary
-            span 2 спальни, 2 кровати...
-        .guest-dropdown__inputs
-            .guest-dropdown__item
-                .guest-dropdown__param Спальни
-                .guest-dropdown__btns + 5 -
-            .guest-dropdown__item
-                .guest-dropdown__param Кровати
-                .guest-dropdown__btns + 5 -
-            .guest-dropdown__item
-                .guest-dropdown__param Ванные комнаты
-                .guest-dropdown__btns + 5 -
+mixin guest-dropdown(rooms, beds, buds, isOpen)
+    include ../field-header/field-header
+    include ../dropdown-item/dropdown-item
+    -var comment= isOpen ? "Expanded" : "Default"
+
+    .guest-dropdown
+        +field-header("Dropdown", comment)
+        details.guest-dropdown__details(open=isOpen)
+            summary.guest-dropdown__summary
+                span 2 спальни, 2 кровати...
+            .guest-dropdown__inputs
+                +dropdown-item("Спальни", rooms)
+                +dropdown-item("Кровати", beds)
+                +dropdown-item("Ванные комнаты", buds)

@@ -1,0 +1,7 @@
+mixin dropdown-item(name, qty=0)
+    .dropdown-item
+        .dropdown-item__name=name
+        .dropdown-item__btns
+            .dropdown-item__btn +
+            .dropdown-item__qty= qty
+            .dropdown-item__btn -
