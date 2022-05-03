@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/index.pug --no-source-maps --lazy",
+    "dev": "parcel ./src/index.pug --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

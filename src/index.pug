@@ -17,9 +17,11 @@ html(lang="ru")
         .form-el-coloumn
             +text-input('Text field', 'id-email', 'email', 'Email', 'default')
             +text-input('Text field', 'id-text', 'text', 'hover / focus', 'This is pretty awesome', 'This is pretty awesome', true)
-            +dropdown-widget(["2 спальни, 2 кровати...", {"Спальни": 1, "Кровати": 2, "Ванные комнаты": 1}])
-            +dropdown-widget(["2 спальни, 2 кровати...", {"Спальни": 4, "Кровати": 3, "Ванные комнаты": 2}], true)
-            +dropdown-widget(["Сколько гостей", {"Взрослые": 0, "Дети": 0, "Младенцы": 0}], true)
-            +dropdown-widget(["3 гостя", {"Взрослые": 2, "Дети": 1, "Младенцы": 0}, true], true)
         .form-el-coloumn
+            +dropdown-widget(dropdownRooms01)
+            +dropdown-widget(dropdownRooms02)
+            +dropdown-widget(dropdownGuests01)
+            +dropdown-widget(dropdownGuests02)
         .form-el-coloumn
+
+        script(src="main.js" type="module")

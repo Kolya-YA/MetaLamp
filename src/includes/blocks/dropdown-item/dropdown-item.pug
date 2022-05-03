@@ -1,7 +1,8 @@
-mixin dropdown-item(name, qty)
+mixin dropdown-item(itemData)
+
     .dropdown-item
-        .dropdown-item__name= name
-        .dropdown-item__btns
-            .dropdown-item__btn +
-            .dropdown-item__qty= qty
-            .dropdown-item__btn -
+        .dropdown-item__name= itemData[0]
+        .dropdown-item__btns(data-minval= itemData[2] || 0, data-maxval= itemData[3] || 10)
+            .dropdown-item__btn.dropdown-item__btn--plus +
+            .dropdown-item__qty= itemData[1]
+            .dropdown-item__btn.dropdown-item__btn--minus -

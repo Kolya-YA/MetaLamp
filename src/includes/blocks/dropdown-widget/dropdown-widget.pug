@@ -1,17 +1,18 @@
-mixin dropdown-widget(items, isOpen)
+mixin dropdown-widget(data)
     include ../field-header/field-header
     include ../dropdown-item/dropdown-item
-    -var comment= isOpen ? "Expanded" : "Default"
+    -var comment= data.isOpen ? "Expanded" : "Default"
 
     .dropdown-widget
         +field-header("Dropdown", comment)
-        details.dropdown-widget__details(open=isOpen)
+        details.dropdown-widget__details(open=data.isOpen)
             summary.dropdown-widget__summary
-                span= items[0]
+                span= data.header
+                //- span= items[0]
             .dropdown-widget__inputs
-                each val, key in items[1]
-                    +dropdown-item(key, val)
-                if items[2]
+                each item in data.items
+                    +dropdown-item(item)
+                if data.withBtns
                     .dropdown-widget__btns
                         button Очистить
                         button Применить
