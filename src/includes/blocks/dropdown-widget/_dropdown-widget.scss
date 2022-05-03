@@ -18,14 +18,15 @@
             }
 
             &::after {
-                content: 'A';
+                content: 'expand_more';
+                font-family: 'MaterialIcons';
+                font-size: 24px;
                 display: flex;
                 width: 44px;
                 height: 44px;
                 margin-left: auto;
                 justify-content: center;
                 align-items: center;
-                background-color: coral;
             }
         }
 
