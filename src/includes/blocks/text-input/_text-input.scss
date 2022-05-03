@@ -16,11 +16,10 @@
         &::placeholder {
             color: var(--color-dark-25);
         }
-    }
-
-    &.text-input--focused {
-        .text-input__input {
+        
+        &--focused {
             border-color: var(--color-dark-50);
         }
     }
+
 }

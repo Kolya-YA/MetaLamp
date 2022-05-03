@@ -4,11 +4,11 @@ mixin dropdown-widget(data)
     -var comment= data.isOpen ? "Expanded" : "Default"
 
     .dropdown-widget
-        +field-header("Dropdown", comment)
+        +field-header(data.header, comment)
         details.dropdown-widget__details(open=data.isOpen)
-            summary.dropdown-widget__summary
-                span= data.header
+            summary.dropdown-widget__summary(data-plural= data.valuePlural)
                 //- span= items[0]
+                span= data.placeholder
             .dropdown-widget__inputs
                 each item in data.items
                     +dropdown-item(item)

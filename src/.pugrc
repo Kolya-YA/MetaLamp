@@ -1,7 +1,26 @@
 {
     "locals": {
+        "textInput01": {
+            "header": "Text field",
+            "headerComment": "default",
+            "placeholder": "Email",
+            "inputId": "id-email",
+            "inputType": "email",
+            "inputValue": "",
+            "isFocused": false
+        },
+        "textInput02": {
+            "header": "Text field",
+            "headerComment": "hover / focus",
+            "placeholder": "Some text",
+            "inputId": "id-text",
+            "inputType": "text",
+            "inputValue": "This is pretty awesome",
+            "isFocused": true
+        },
         "dropdownRooms01": {
-            "header": "Сколько спальней и кроватей",
+            "header": "Dropdown",
+            "placeholder": "Сколько спальней и кроватей",
             "items": [
                 ["Спальни", 1],
                 ["Кровати", 2],
@@ -9,7 +28,8 @@
             ]
         },
         "dropdownRooms02": {
-            "header": "Сколько спальней и кроватей",
+            "header": "Dropdown",
+            "placeholder": "Сколько спальней и кроватей",
             "items": [
                 ["Спальни", 2],
                 ["Кровати", 3],
@@ -18,8 +38,9 @@
             "isOpen": true
         },
         "dropdownGuests01": {
-            "header": "Сколько гостей",
-            "headerPlural": ["гость", "гостя", "гостей"],
+            "header": "Dropdown",
+            "placeholder": "Сколько гостей",
+            "valuePlural": ["гость", "гостя", "гостей"],
             "items": [
                 ["Взрослые", 3],
                 ["Дети", 0],
@@ -29,7 +50,8 @@
             "withBtns": true
         },
         "dropdownGuests02": {
-            "header": "Сколько гостей",
+            "header": "Dropdown",
+            "placeholder": "Сколько гостей",
             "headerPlural": ["гость", "гостя", "гостей"],
             "items": [
                 ["Взрослые", 2],

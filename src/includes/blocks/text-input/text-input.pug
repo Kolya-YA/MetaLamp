@@ -1,11 +1,13 @@
-mixin text-input(header, fieldId, fieldType, headerComment, placeholder, fieldValue, isFocused)
+//- mixin text-input(header, fieldId, fieldType, headerComment, placeholder, fieldValue, isFocused)
+mixin text-input(data)
     include ../field-header/field-header
-    .text-input(class=isFocused && "text-input--focused")
-        +field-header(header, headerComment, fieldId)
+    .text-input
+        +field-header(data.header, data.headerComment, data.inputId)
         input.text-input__input(
-            type=fieldType
-            id=fieldId
-            name=fieldId
-            placeholder=placeholder
-            value = fieldValue
+            class= data.isFocused && "text-input__input--focused"
+            type=data.inputType
+            id=data.inputId
+            name=data.inputId
+            placeholder=data.placeholder
+            value = data.inputValue
         )
