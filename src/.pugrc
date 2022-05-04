@@ -52,7 +52,7 @@
         "dropdownGuests02": {
             "header": "Dropdown",
             "placeholder": "Сколько гостей",
-            "headerPlural": ["гость", "гостя", "гостей"],
+            "valuePlural": ["гость", "гостя", "гостей"],
             "items": [
                 ["Взрослые", 2],
                 ["Дети", 2],
